@@ -7,7 +7,7 @@
 }
 
 .q6__box.is-textalign .q6__box__inner {
-  text-align: center; 
+  text-align: center;
 }
 
 .q6__box.is-textalign .q6__box__text {
@@ -29,7 +29,7 @@
 
 .q6--around.is-table .q6__box {
   background-color: #ecf1f2;
-  display: table-cell;
+  display: table-cell; /* tableはtable/table-cell */
   text-align: center;
   vertical-align: middle;
 }
