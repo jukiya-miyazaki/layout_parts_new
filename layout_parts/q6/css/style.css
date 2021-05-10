@@ -7,7 +7,7 @@
 }
 
 .q6__box.is-textalign .q6__box__inner {
-  text-align: center;
+  text-align: center; 
 }
 
 .q6__box.is-textalign .q6__box__text {
@@ -15,7 +15,7 @@
 }
 
 .q6__box.is-margin .q6__box__text {
-  margin: 0 auto;
+  margin: 0 auto; /* 中央寄せ */
   text-align: center;
 }
 
