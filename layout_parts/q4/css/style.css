@@ -1,5 +1,70 @@
 @charset "UTF-8";
 
-/* 回答はここに書いてね */
+/* 
+- display: table
+  絶対にカラム落ちしない
+  すべてのカラムの高さは、一番縦長と同じ高さになる
+  floatにはない
 
-/* 回答はここに書いてね */
+- display: table-cell
+  横に伸び縮み
+  「入れ子」や、レスポンシブなブロックを実装可能
+*/
+
+.q4 {
+  padding: 20px;
+  background-color: #ecf1f2;
+  box-sizing: border-box;
+  /* パディングとボーダーを幅と高さに含める */
+}
+
+.q4-contents {
+  display: table;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #ecf1f2;
+}
+
+.q4-contents:first-child {
+  margin-top: 0;
+}
+
+.q4-content {
+  display: table-cell;
+  padding: 20px 0;
+  text-align: center;
+  /* テキスト中央合わせ */
+}
+
+.q4-content.pink {
+  width: 100px;
+  /* 固定 */
+  background-color: #fdc8b8;
+}
+
+.q4-content.purple {
+  /* 可変 */
+  background-color: #e0abd9;
+}
+
+.q4-content.blue {
+  width: 100px;
+  /* 固定 */
+  background-color: #b6d8ed;
+}
+
+.q4-content.yellow {
+  /* 可変 */
+  background-color: #e5d32e;
+}
+
+.q4-content.red {
+  /* 可変 */
+  background-color: #ec8f9a;
+}
+
+.q4-content.green {
+  width: 500px;
+  /* 固定 */
+  background-color: #8fdcad;
+}

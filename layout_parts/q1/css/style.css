@@ -1,5 +1,52 @@
 @charset "UTF-8";
 
-/* 回答はここに書いてね */
+/* 「clearfix」クラスに対してスタイルの指定をしている。うまく表示されなかった「.q1__content」が、3つの濃い青いボックスを囲うようにちゃんと表示される。 */
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
 
-/* 回答はここに書いてね */
+.q1__content {
+  /* 画面いっぱいだったテキストの範囲が900pxに。*/
+  width: 900px;
+  /*  この要素「.q1__content」が中央になる。ブロック要素（幅を指定しないと親要素の幅と同じに）親要素以下の幅を決めると決めた幅の外はmarginの扱いになるので、それを左右に振り分ける感じ。デベロッパーツールで確認すると左右にオレンジ（margin）のエリアが表示される。 */
+  margin: 0 auto;
+  /* paddingというのは、その要素の内側の余白。このレイアウトでは、「.q1__content」の周りに余白があるのでこういう場合は「.q1__content」の内側の余白としてpaddingをつけてる。デベロッパーツールで確認するとpaddingのエリアは緑で表示される。 */
+  padding: 20px;
+  /* widthで指定した幅の範囲に背景色が反映。 */
+  background-color: #eff3f4;
+
+  /* 補足：デベロッパーツールでこの「.q1__content」の要素を見てみると、幅が940px。指定している幅は900pxなのになぜ940pxになってしまっているのか。それはpaddingというのは内側の余白だから。原則として、「要素の幅 = 指定したwidth + padding + border（今回は指定してない）」になる。ここでは、width900px + 左右のpadding20pxずつで940pxになっている。box-sizingのコメントアウトを外して確認をすると「要素の幅 = 指定したwidth + padding」だったのが「要素の幅 = 指定したwidth」になります。つまり、指定した幅の中にpadding/borderを含めるというものになります。確認後、再度コメントアウト */
+  /* box-sizing: border-box; */
+}
+
+.q1__content__box {
+  /* 3つある「.q1__content__box」の要素を横並びにしたい。要素にfloatの指定をします。この状態でブラウザで確認すると3つの「.q1__content__box」クラスを囲っている灰色の背景が変な形になってしまっています。それはfloatの指定をしたため起きてしまったもの。floatを指定したら、floatを指定した親要素でclearfixのスタイルも指定。 */
+  float: left;
+  /* marginとはpaddingとは違い要素の外側の余白の指定。この「.q1__content__box」は3つ並んでいるが、それ同士がくっついてしまっているので余白をつける */
+  margin-left: 20px;
+  /* paddingとは要素の内側の余白。この「.q1__content__box」は濃い青の背景が指定されている。内側の余白（padding）を20pxをとると、濃い青の背景が見えるようになる。 */
+  padding: 20px;
+  /* 濃い青の背景色の要素の幅が230pxに。 */
+  width: 230px;
+  /* 濃い青の背景色が反映。 */
+  background-color: #3274ae;
+}
+
+/* 3つ横並びの「.q1__content__box」同士の余白をmargin-leftで取った。一番左にある「.q1__content__box」にはmargin-leftが不要。margin-leftを0に */
+.q1__content .q1__content__box:first-child {
+  margin-left: 0;
+}
+
+.q1__content__text {
+  /* 枠線（border）とテキストの間に余白がない。内側の余白（padding）を付けることで、枠線（border）とテキストの間に余白ができる。 */
+  padding: 20px;
+  /* テキストの文字のサイズ（font-size）とテキストの行の高さ（line-height）を指定。 */
+  font-size: 16px;
+  line-height: 16px;
+  /* borderとは枠線を指定するCSS。「.q1__content__text」はテキストのpタグでその要素に黒い枠線が付く。 */
+  border: 10px solid #022336;
+/* 薄い青の背景色が反映。ブラウザで確認すると、「.q1__content__box」に指定した背景色がなくなってしまいる。これはなくなってしまったわけではなく、「.q1__content__box」と「.q1__content__text」が同じ大きさなのでかぶって見えなくなってしまってるだけなので、それを解消。 */
+  background-color: #eaf4ff;
+}
