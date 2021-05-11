@@ -57,7 +57,7 @@
 /* --- */
 
 .flex_box {
-  display: flex;/* lexでの横並び */
+  display: flex;/* flexでの横並び */
   justify-content: space-around;
   align-items: flex-end;
 }
