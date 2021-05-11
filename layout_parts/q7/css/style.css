@@ -7,7 +7,7 @@
 }
 
 .float_box {
-  width: 225px;
+  /* width: 225px; 共通クラスに切り出し */
   margin-left: 50px;
   box-sizing: border-box;
   float: left;/* floatでの横並び */
@@ -25,7 +25,7 @@
 }
 
 .table_cell {
-  width: 225px;
+  /* width: 225px; 共通クラスに切り出し */
   padding-left: 50px;
   display: table-cell;/* tableでの横並び */
   vertical-align: middle;
@@ -37,12 +37,12 @@
 
 /* --- */
 
-.inline_block_box {
+.font_0 {
   font-size: 0;
 }
 
 .inline_block_content {
-  width: 225px;
+  /* width: 225px; 共通クラスに切り出し */
   margin-left: 50px;
   font-size: 16px;
   display: inline-block;/* inline-blockでの横並び */
@@ -63,15 +63,15 @@
 }
 
 .flex_content {
-  width: 225px;
+  /* width: 225px; 共通クラスに切り出し */
   box-sizing: border-box;
 }
 
 /* --- */
 
-.stable_flexible_box {
+/* .stable_flexible_box {
   font-size: 0;
-}
+} */
 
 .stable_box {
   width: 300px;
@@ -89,4 +89,8 @@
   display: inline-block;/* inline-blockとmarginでの横並び */
   box-sizing: border-box;
   vertical-align: top;
+}
+
+.common {/* 共通クラス */
+  width: 225px;
 }
