@@ -7,9 +7,11 @@
 }
 
 .float_box {
-  /* width: 225px; 共通クラスに切り出し */
+  /* width: 225px;
+  共通クラスに切り出し */
   margin-left: 50px;
-  box-sizing: border-box;
+  /* box-sizing: border-box;
+  共通クラスに切り出し */
   float: left;/* floatでの横並び */
   font-size: 16px;
 }
@@ -46,7 +48,8 @@
   margin-left: 50px;
   font-size: 16px;
   display: inline-block;/* inline-blockでの横並び */
-  box-sizing: border-box;
+  /* box-sizing: border-box;
+  共通クラスに切り出し */
   vertical-align: middle;
 }
 
@@ -64,7 +67,8 @@
 
 .flex_content {
   /* width: 225px; 共通クラスに切り出し */
-  box-sizing: border-box;
+  /* box-sizing: border-box;
+  共通クラスに切り出し */
 }
 
 /* --- */
@@ -77,7 +81,8 @@
   width: 300px;
   font-size: 16px;
   display: inline-block;/* inline-blockとmarginでの横並び */
-  box-sizing: border-box;
+  /* box-sizing: border-box;
+  共通クラスに切り出し */
   vertical-align: top;
 }
 
@@ -87,10 +92,15 @@
   margin-left: -300px;/* inline-blockとmarginでの横並び */
   padding-left: 350px;
   display: inline-block;/* inline-blockとmarginでの横並び */
-  box-sizing: border-box;
+  /* box-sizing: border-box;
+  共通クラスに切り出し */
   vertical-align: top;
 }
 
 .common_w {/* 共通クラス */
   width: 225px;
+}
+
+.common_bs {/* 共通クラス */
+  box-sizing: border-box;
 }
