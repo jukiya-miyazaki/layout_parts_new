@@ -10,7 +10,7 @@
   width: 225px;
   margin-left: 50px;
   box-sizing: border-box;
-  float: left;
+  float: left;/* floatでの横並び */
   font-size: 16px;
 }
 
@@ -21,13 +21,13 @@
 /* --- */
 
 .table {
-  display: table;
+  display: table;/* tableでの横並び */
 }
 
 .table_cell {
   width: 225px;
   padding-left: 50px;
-  display: table-cell;
+  display: table-cell;/* tableでの横並び */
   vertical-align: middle;
 }
 
@@ -45,7 +45,7 @@
   width: 225px;
   margin-left: 50px;
   font-size: 16px;
-  display: inline-block;
+  display: inline-block;/* inline-blockでの横並び */
   box-sizing: border-box;
   vertical-align: middle;
 }
@@ -57,7 +57,7 @@
 /* --- */
 
 .flex_box {
-  display: flex;
+  display: flex;/* lexでの横並び */
   justify-content: space-around;
   align-items: flex-end;
 }
@@ -76,7 +76,7 @@
 .stable_box {
   width: 300px;
   font-size: 16px;
-  display: inline-block;
+  display: inline-block;/* inline-blockとmarginでの横並び */
   box-sizing: border-box;
   vertical-align: top;
 }
@@ -84,9 +84,9 @@
 .flexible_box {
   width: 100%;
   font-size: 16px;
-  margin-left: -300px;
+  margin-left: -300px;/* inline-blockとmarginでの横並び */
   padding-left: 350px;
-  display: inline-block;
+  display: inline-block;/* inline-blockとmarginでの横並び */
   box-sizing: border-box;
   vertical-align: top;
 }
