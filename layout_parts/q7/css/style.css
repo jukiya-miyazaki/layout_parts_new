@@ -1,25 +1,29 @@
 @charset "UTF-8";
 
+/* -Q7-1- */
+
 .clearfix:after {
   display: block;
   clear: both;
   content: "";
 }
 
-.q7 .q7__box {
+.q7 .float_box {
   width: 225px;
 }
 
-.q7--float .q7__box {
+.q7--float .float_box {
   margin-left: 50px;
   font-size: 16px;
   box-sizing: border-box;
   float: left;
 }
 
-.q7--float .q7__box:first-child {
+.q7--float .float_box:first-child {
   margin-left: 0;
 }
+
+/* -Q7-2- */
 
 .q7--table .q7__inner {
   display: table;
@@ -39,6 +43,8 @@
   font-size: 16px;
 }
 
+/* -Q7-3- */
+
 .q7--inlineblock .q7__inner {
   font-size: 0;
 }
@@ -55,6 +61,8 @@
   margin-left: 0;
 }
 
+/* -Q7-4- */
+
 .q7--flex .q7__inner {
   display: flex;
   justify-content: space-around;
@@ -66,6 +74,8 @@
   vertical-align: middle;
   box-sizing: border-box;
 }
+
+/* -Q7-5- */
 
 .q7--margin .q7__inner {
   font-size: 0;
