@@ -47,7 +47,8 @@
   /* width: 225px; 共通クラスに切り出し */
   margin-left: 50px;
   font-size: 16px;
-  display: inline-block;/* inline-blockでの横並び */
+  display: inline-block;
+  /* inline-blockでの横並び */
   /* box-sizing: border-box;
   共通クラスに切り出し */
   vertical-align: middle;
@@ -65,11 +66,10 @@
   align-items: flex-end;
 }
 
-.flex_content {
-  /* width: 225px; 共通クラスに切り出し */
-  /* box-sizing: border-box;
-  共通クラスに切り出し */
-}
+/* .flex_content {
+  width: 225px;
+  box-sizing: border-box;
+} */
 
 /* --- */
 
@@ -80,7 +80,8 @@
 .stable_box {
   width: 300px;
   font-size: 16px;
-  display: inline-block;/* inline-blockとmarginでの横並び */
+  display: inline-block;
+  /* inline-blockとmarginでの横並び */
   /* box-sizing: border-box;
   共通クラスに切り出し */
   vertical-align: top;
@@ -89,7 +90,8 @@
 .flexible_box {
   width: 100%;
   font-size: 16px;
-  margin-left: -300px;/* inline-blockとmarginでの横並び */
+  margin-left: -300px;
+  /* inline-blockとmarginでの横並び */
   padding-left: 350px;
   display: inline-block;/* inline-blockとmarginでの横並び */
   /* box-sizing: border-box;
