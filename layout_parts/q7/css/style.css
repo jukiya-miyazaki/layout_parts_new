@@ -1,103 +1,92 @@
 @charset "UTF-8";
 
-/* -Q7-1- */
-
-.clearfix:after {
+.clearfix::after {
+  content: "";
   display: block;
   clear: both;
-  content: "";
 }
 
-.q7 .float_box {
+.float_box {
   width: 225px;
-}
-
-.q7--float .float_box {
   margin-left: 50px;
-  font-size: 16px;
   box-sizing: border-box;
   float: left;
+  font-size: 16px;
 }
 
-.q7--float .float_box:first-child {
+.float_box:first-child {
   margin-left: 0;
 }
 
-/* -Q7-2- */
+/* --- */
 
-.q7--table .q7__inner {
+.table {
   display: table;
 }
 
-.q7--table .q7__box {
+.table_cell {
+  width: 225px;
   padding-left: 50px;
   display: table-cell;
   vertical-align: middle;
 }
 
-.q7--table .q7__box:first-child {
+.table_cell:first-child {
   padding-left: 0;
 }
 
-.q7--table .q7__box__text {
-  font-size: 16px;
-}
+/* --- */
 
-/* -Q7-3- */
-
-.q7--inlineblock .q7__inner {
+.inline_block_box {
   font-size: 0;
 }
 
-.q7--inlineblock .q7__box {
+.inline_block_content {
+  width: 225px;
   margin-left: 50px;
   font-size: 16px;
   display: inline-block;
-  vertical-align: middle;
   box-sizing: border-box;
+  vertical-align: middle;
 }
 
-.q7--inlineblock .q7__box:first-child {
+.inline_block_content:first-child {
   margin-left: 0;
 }
 
-/* -Q7-4- */
+/* --- */
 
-.q7--flex .q7__inner {
+.flex_box {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
 
-.q7--flex .q7__box {
-  font-size: 16px;
-  vertical-align: middle;
+.flex_content {
+  width: 225px;
   box-sizing: border-box;
 }
 
-/* -Q7-5- */
+/* --- */
 
-.q7--margin .q7__inner {
+.stable_flexible_box {
   font-size: 0;
 }
 
-.q7--margin .q7__box {
+.stable_box {
+  width: 300px;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
   vertical-align: top;
 }
 
-.q7--margin .q7__box.is-stable {
-  width: 300px;
-  display: inline-block;
-}
-
-.q7--margin .q7__box.is-flexible {
+.flexible_box {
   width: 100%;
+  font-size: 16px;
   margin-left: -300px;
   padding-left: 350px;
   display: inline-block;
   box-sizing: border-box;
-}
-
-.q7--margin .q7__box__text {
-  font-size: 16px;
+  vertical-align: top;
 }
