@@ -27,7 +27,7 @@
     /* 変化するすべてのプロパティへの適用 */
 }
 
-.q8__trans:hover .q8__img {/* 疑似クラス */
+.q8__trans:hover .q8__img {/* 疑似クラス q8__transをhoverした時に、子要素q8__imgを{}の中の様にする*/
   transform: scale(1.5);/* 要素を拡大・縮小表示 */
 }
 

@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+.common {/* 共通クラス */
+  width: 225px;
+  box-sizing: border-box;
+}
+
+.table_cell.common {
+  box-sizing: content-box;
+}
+
+/* .table_cell.commonを両方持っているとき
+クラス名を続けて書いているとき「且つ」の意味 */
+
 .clearfix::after {
   content: "";
   display: block;
@@ -97,12 +109,4 @@
   /* box-sizing: border-box;
   共通クラスに切り出し */
   vertical-align: top;
-}
-
-.common_w {/* 共通クラス */
-  width: 225px;
-}
-
-.common_bs {/* 共通クラス */
-  box-sizing: border-box;
 }
